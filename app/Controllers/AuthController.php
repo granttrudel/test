@@ -52,6 +52,14 @@ class AuthController extends BaseController
 
     public function logout()
     {
-        //TODO: implement please
+        if( isset( $_SESSION[ 'logged' ] ) )
+        {
+            unset( $_SESSION[ 'logged' ] );
+        }
+        if( isset( $_SESSION[ 'userId' ] ) )
+        {
+            unset( $_SESSION[ 'userId' ] );
+        }
+        $this->redirect('login');
     }
 }

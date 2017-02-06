@@ -1,8 +1,9 @@
 <?php
 
 namespace Acme\FsTest\Data;
+use Illuminate\Database\Eloquent\Model;
 
-class User
+class User extends Model
 {
     public $id;
     public $firstName;

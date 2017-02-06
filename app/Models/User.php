@@ -22,7 +22,16 @@ class User
 
     public function update(Data\User $user)
     {
-        //TODO: Implement update operation
+        $query = 'update users 
+                    set password = :password
+                    where id = :id';
+                    
+        $bind = array( 
+            'password' => $user->password, 
+            'id' => $user->id
+            );
+
+        return DB::table('users')->update( $query, $bind );
     }
 
     public function login(Data\User $user)

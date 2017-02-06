@@ -6,16 +6,24 @@
 ?>
 
 <form method="POST">
-    <div>
-        <label for="email">Email</label>
-        <input type="text" name="email" />
+    <p></p>
+    <div class="input-group col-sm-4">
+        <span class="input-group-addon" id="basic-addon1">Email</span>
+        <input type="text" name="email" class="form-control" aria-describedby="basic-addon1">
     </div>
-    <div>
-        <label for="password">Password</label>
-        <input type="password" name="password" />
+    <p></p>
+
+    <div class="input-group col-sm-4">
+        <span class="input-group-addon" id="basic-addon2">Password</span>
+        <input type="password" name="password" class="form-control" aria-describedby="basic-addon2">
     </div>
-    <div>
-        <input type="submit" value="Login" />
+    <p></p>
+
+    <div class="input group col-sm-4">
+        <input type="submit" class="btn btn-default" value="Login" />
     </div>
-    <p><a href="register">Register a new account</p>
+    <br/><br/>
+    
+    <p><a href="register" class="btn btn-default" role="button">Register a new account</a></p>
+
 </form>

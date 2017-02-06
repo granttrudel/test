@@ -1,4 +1,4 @@
-<h1>Profile Page</h1>
+<h1>Register Page</h1>
 
 <form method="POST">
     <p></p>
@@ -27,7 +27,7 @@
     <p></p>
 
     <div class="input group col-sm-4">
-        <input type="submit" class="btn btn-default" value="Save" />
+        <input type="submit" class="btn btn-default" value="Register" />
     </div>
     <br/><br/>
 
